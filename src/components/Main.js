@@ -96,8 +96,10 @@ export default function Main() {
                     <option value="dogs">Dogs</option>
                 </select>
             </div>
-            <div className="main--div3">
-                {cards}
+            <div className="h-screen">
+                <div className="main--div3">
+                    {cards}
+                </div>
             </div>
         </div>
     )

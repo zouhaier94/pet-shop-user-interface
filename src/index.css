@@ -59,7 +59,7 @@
 @apply mx-2 mt-4 w-20 border border-gray-300 rounded focus:border-blue-600 text-center;
 }
 .main--div3 {
-@apply h-screen shadow-md grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2;
+@apply h-auto shadow-md grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2;
 }
 
 /* Navbar */
