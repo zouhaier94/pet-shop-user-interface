@@ -96,7 +96,7 @@ export default function Main() {
                     <option value="dogs">Dogs</option>
                 </select>
             </div>
-            <div className="h-screen shadow-md">
+            <div className="h-auro shadow-md">
                 <div className="main--div3">
                     {cards}
                 </div>

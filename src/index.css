@@ -18,7 +18,7 @@
 @apply w-full md:h-[260] h-[165];
 }
 .card--badge {
-@apply bg-white absolute border-gray-300 border-[1px]  mt-2 ml-2 px-2 rounded-md;
+@apply bg-white border-gray-200 border-[1px] ml-2 px-1 rounded-md;
 }
 
 /* Contact */
