@@ -12,7 +12,7 @@
 
 /* Card */
 .card {
-@apply rounded-2xl overflow-hidden  shadow-md bg-white  hover:shadow-xl md:w-[300px] md:h-[300px] m-5 w-[200px] h-[200px];
+@apply rounded-2xl overflow-hidden  shadow-md bg-white  hover:scale-105 duration-500 hover:shadow-xl md:w-[300px] md:h-[300px] m-5 w-[200px] h-[200px];
 }
 .card--img {
 @apply w-full md:h-[260] h-[165];
