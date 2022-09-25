@@ -4,16 +4,20 @@ import About from "../components/About.js";
 import Hero from "../components/Hero.js";
 import Main from "../components/Main.js";
 import Contact from "../components/Contact.js";
+import { useNavigate } from 'react-router-dom';
+
+
 
 export default function Navbar() {
 
     let [isOpen, setIsOpen] = react.useState(false);
+    const navigate = useNavigate()
 
     return (
         <>
             <div className="nav">
                 <div className="nav--items">
-                    <div className="logo--text flex">
+                    <div className="logo--text flex" onClick={() => navigate("/")}>
                         <img className="h-10 mx-2" src={require("../images/pet--logo.png")} alt="" />
                         PetShop
                     </div>
@@ -40,9 +44,9 @@ export default function Navbar() {
 
             <Routes>
                 <Route path="/" element={<><Hero /><Main /></>} />
-                <Route path="/products" element={<Main />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/products" element={<><Main /></>} />
+                <Route path="/about" element={<><About /></>} />
+                <Route path="/contact" element={<><Contact /></>} />
             </Routes>
         </>
     );

@@ -87,7 +87,8 @@ export default function Main() {
     )
 
     return (
-        <div>
+        <div className="flex-grow shadow-md" >
+
             <div className="main--div1">
                 <select className="main--div2"
                     id="choice" value={formData.choice} onChange={handleChange} name="choice">
@@ -96,11 +97,11 @@ export default function Main() {
                     <option value="dogs">Dogs</option>
                 </select>
             </div>
-            <div className="h-auro shadow-md">
-                <div className="main--div3">
-                    {cards}
-                </div>
+
+            <div className="main--div3">
+                {cards}
             </div>
+
         </div>
     )
 
