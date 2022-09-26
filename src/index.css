@@ -64,7 +64,7 @@
 
 /* Navbar */
 .nav {
-@apply shadow-md w-full top-0 left-0 right-0 fixed;
+@apply shadow-md w-full top-0 left-0 right-0 absolute;
 }
 .nav--items {
 @apply md:flex items-center justify-around bg-white py-5 px-8;
