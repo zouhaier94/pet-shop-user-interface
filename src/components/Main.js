@@ -4,9 +4,13 @@ import { collection, query, getDocs } from "firebase/firestore";
 import { db } from "../Firebase";
 
 
-export default function Main() {
+export default function Main({ handleAdd }) {
 
     const [formData, setFormData] = React.useState({ choice: "all" })
+
+
+
+    //console.log(cart)
 
     function handleChange(event) {
         const { name, value } = event.target
@@ -42,7 +46,7 @@ export default function Main() {
         fetchData()
     }, []);
 
-    console.log(data)
+    //console.log(data)
 
     const cards = data.map(el => {
 
@@ -54,6 +58,8 @@ export default function Main() {
                         name={el.name}
                         price={el.price}
                         img={el.imgUrl}
+                        el={el}
+                        handleAdd={handleAdd}
                     />
                 )
             }
@@ -66,6 +72,8 @@ export default function Main() {
                         name={el.name}
                         price={el.price}
                         img={el.imgUrl}
+                        el={el}
+                        handleAdd={handleAdd}
                     />
                 )
             }
@@ -78,6 +86,8 @@ export default function Main() {
                     name={el.name}
                     price={el.price}
                     img={el.imgUrl}
+                    el={el}
+                    handleAdd={handleAdd}
                 />
             )
 
@@ -98,7 +108,7 @@ export default function Main() {
                 </select>
             </div>
 
-            <div className="main--div3">
+            <div className="main--div3 grid grid-cols-1	justify-self-center">
                 {cards}
             </div>
 

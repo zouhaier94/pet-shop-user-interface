@@ -72,7 +72,7 @@ export default function Contact() {
                         <input
                             type="submit"
                             value="Send Message"
-                            className="contact--submit"
+                            className="contact--submit "
                         />
 
                     </form>

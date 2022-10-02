@@ -1,17 +1,17 @@
-export default function Card(props) {
+import React from 'react'
+
+export default function Card({ img, name, price, el, handleAdd }) {
 
     return (
-
         <div className="card ">
-
-
-            <img className="card--img" src={props.img} alt="" />
-
-            <div className="my-2 text-center flex justify-center ">
-                <div className="font-bold ">{props.name}</div>
-                <div className="card--badge">{props.price}$</div>
+            <img className="card--img" src={img} alt="" />
+            <div className="text-center grid grid-rows-2 justify-items-center mb-1">
+                <div className="font-bold ">{name}</div>
+                <div>{price}$</div>
+                <button onClick={() => handleAdd(el)} className="cart--badge" >Buy Now</button>
             </div>
         </div>
 
     )
 }
+
