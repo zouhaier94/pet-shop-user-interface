@@ -13,12 +13,17 @@ export default function Navbar() {
     const navigate = useNavigate()
 
     const [cart, setCart] = React.useState([])
-
+    localStorage.setItem("cart", JSON.stringify(cart))
 
     const handleAdd = (el) => {
         cart.push([el.name, el.price, el.imgUrl])
         console.log(cart)
+        setCart(cart)
+        localStorage.setItem("cart", JSON.stringify(cart))
     }
+
+
+
 
     return (
         <>
