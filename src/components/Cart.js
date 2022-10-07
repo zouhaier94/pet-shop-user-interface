@@ -16,8 +16,8 @@ export default function Cart({ img, name, price }) {
             </div>
 
             <div className='col-span-1 grid grid-cols-2 gap-1 mr-2'>
-                <img className=" md:h-8 h-6 self-center mx-auto cursor-pointer" src={require('../images/add.png')} alt="" />
-                <img className=" md:h-8 h-6 self-center mx-auto cursor-pointer" src={require('../images/sub.png')} alt="" />
+                <img className=" md:h-8 h-6 self-center mx-auto cursor-not-allowed" src={require('../images/add.png')} alt="" />
+                <img className=" md:h-8 h-6 self-center mx-auto cursor-not-allowed" src={require('../images/sub.png')} alt="" />
             </div>
 
         </div>

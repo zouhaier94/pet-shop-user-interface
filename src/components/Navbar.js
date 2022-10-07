@@ -52,7 +52,7 @@ export default function Navbar() {
 
                         <Link to="/shop">
                             <div className="li--style">
-                                <div className="li--style"><img className="h-5 cursor-pointer" src={require("../images/cart.png")} alt="" /></div>
+                                <img className="h-5" src={require("../images/cart.png")} alt="" />
                             </div>
                         </Link>
 
