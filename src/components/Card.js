@@ -15,3 +15,4 @@ export default function Card({ img, name, price, el, handleAdd }) {
     )
 }
 
+
